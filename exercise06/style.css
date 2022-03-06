@@ -1,0 +1,30 @@
+body {
+  background: white;
+  margin: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.card {
+  position: relative;
+  width: 15rem;
+  height: 25rem;
+  padding: 10px;
+  background-color: rgb(122, 56, 128);
+  box-shadow: 5px 5px 23px rgb(41, 40, 40);
+  border-radius: 15px;
+}
+.image {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.card img {
+  width: 90%;
+  height: 90%;
+  border-radius: 0.5rem;
+}
