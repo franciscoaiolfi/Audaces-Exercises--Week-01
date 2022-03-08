@@ -12,3 +12,4 @@
   grid template, consegui definir tamanhos e nomear as áreas, tornando mais legivel enquanto leigo no assunto.
 
 - Importante refazer o layout apenas com display flex.
+  m

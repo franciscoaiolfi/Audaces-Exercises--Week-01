@@ -4,78 +4,133 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style3.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Exercise03</title>
   </head>
   <body>
-    <figure>
-      <img src="" alt="" />
-    </figure>
-    <h1>Profile Name</h1>
-    <p>246 Blockfriars Road</p>
-    <br />
-    <p>Ludgate House</p>
-    <br />
-    <p>Londom</p>
-    <br />
-    <label for="">Email</label>
-    <input type="email" name="" id="" />
-    <label for="">Telephone</label>
-    <input type="text" />
-    <aside>
-      <nav>
-        <li>
+    <!--Section Top-->
+    <header>
+      <div class="blue-background"></div>
+    </header>
+    <section class="top-section">
+      <div class="contentWrapper">
+        <div class="image-content">
+          <img src="/img/IMG_20200112_195458_734.jpg" alt="" />
+        </div>
+        <div class="profile-content">
+          <h1><span>Francisco</span> Aiolfi</h1>
           <ul>
-            Lorem ipsum
+            <li>245 off Road</li>
+            <li>Ludgate House</li>
+            <li>Londom, S42 9UY</li>
+            <li>Email:</li>
+            <li>Telephone: 00066066</li>
           </ul>
+        </div>
+        <div class="categories-content">
+          <h1>Hard Skills</h1>
           <ul>
-            Dolor sit
+            <li>JavaScript</li>
+            <li>Framework Angular</li>
+            <li>Java</li>
+            <li>Bootstrap</li>
           </ul>
-          <ul>
-            Amet
-          </ul>
-          <ul>
-            dolor sit
-          </ul>
-        </li>
-      </nav>
-    </aside>
+        </div>
+      </div>
+    </section>
+    <!--End of Top Section-->
     <section>
       <article>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-          recusandae magnam, voluptates dolorum ut provident qui esse autem
-          necessitatibus! Laborum modi consequuntur voluptatum quasi earum esse
-          quis non quas quibusdam?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non quas
-          obcaecati nemo debitis, esse laudantium consectetur? Iure libero,
-          veniam voluptatibus vero distinctio mollitia ea sed totam, aliquid
-          aspernatur, ipsum modi!
-        </p>
+        <div class="text-area">
+          <div class="textAreaA">
+            <h1>Conceitos básicos de Grid Layout</h1>
+            <p>
+              <a
+                href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout"
+                >CSS Grid Layout</a
+              >
+              introduz um sistema bi-dimensional de grid (literalmente "grades")
+              para CSS. Grids podem ser usados para o design de layouts de
+              grandes seções de uma webpage, assim como de pequenos elementos de
+              interface. Esse artigo apresenta o CSS Grid Layout e a
+              terminologia que é parte da especificação CSS Grid Layout Level 1.
+              As funcionalidades demonstradas neste resumo serão posteriormente
+              explicadas em maiores detalhes nas demais seções desse guia.
+            </p>
+            <h2>O que é grid?</h2>
+            <p>
+              Grid é uma malha formada pela interseção de um conjunto de linhas
+              horizontais e um conjunto de linhas verticais – um dos conjuntos
+              define colunas e outro linhas. Dentro de um grid, respeitando-se a
+              configuração criada pelas suas linhas, pode-se inserir elementos
+              da marcação. As CSS grid layout preveem as seguintes
+              funcionalidades:
+            </p>
+            <h3>Dimensões fixas ou flexíveis</h3>
+            <p>
+              Você pode criar grids com dimensões fixas – por exemplo: definindo
+              dimensões em pixels. Ou criar grids com dimensões flexíveis
+              definindo-as com uso de porcentagem ou da nova unidade CSS fr
+              criada para esse propósito.
+            </p>
+          </div>
+
+          <div class="textAreaB">
+            <h1>Posicionamento de itens</h1>
+            <p>
+              Você pode posicionar com precisão itens de uma página usando o
+              número que define uma linha do grid, usando nomes ou ainda fazendo
+              referência a uma determinada região do grid. Existe ainda um
+              algorítmo de controle do posicionamento de itens da página que não
+              possuem uma posição capaz de ser explícitamente definida no grid.
+            </p>
+            <h2>Criação de grids adicionais</h2>
+            <p>
+              Além da possibilidade de se criar um grid inicial para o layout a
+              Especificação prevê também a possibilidade de se adicionar linhas
+              e colunas para layoutar conteúdos adicionados fora do grid
+              inicial. Funcionalidades tal como adicionar "tantas colunas quanto
+              necessárias em um grid container existente" são previstas nas
+              Especificações.
+            </p>
+          </div>
+        </div>
       </article>
     </section>
     <section>
-      <div class="youTube">
-        <video src="https://www.youtube.com/" controls></video>
-        <p>
-          If your browser dont support. Here is a
-          <a href="https://www.youtube.com/"> link to the video.</a>
-        </p>
-      </div>
-      <div class="figureSection">
-        <figure>
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-        </figure>
-      </div>
-      <div class="attachmentos">
-        <p>.......</p>
-        <p>.......</p>
-        <p>.......</p>
-        <p>.......</p>
+      <div class="bottomSection">
+        <div class="videoSection">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/J5n2aS37rpE"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="bottomImageSection">
+          <img src="/img/angularlogo.png" alt="" />
+          <img src="/img/html.png" alt="" />
+          <img src="/img/css.jpg" alt="" />
+          <img src="/img/js-logo.webp" alt="" />
+        </div>
+        <div class="linksBottomSection">
+          <h1>Contatos</h1>
+          <a href=""><i class="fa-brands fa-instagram"></i> Instagram</a>
+          <a href=""><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+          <a href=""
+            ><i class="fa-brands fa-stack-overflow"></i>Stackoverflow</a
+          >
+        </div>
       </div>
     </section>
   </body>
