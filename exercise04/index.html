@@ -5,14 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
     <title>Exercise04</title>
   </head>
   <body>
-    <header>
-      <div class="yourCart">
-        <a href=""><i></i></a>
-        <button>Your Cart</button>
-      </div>
+    <header class="headerTop">
       <div class="navSection">
         <nav>
           <ul>
@@ -23,20 +35,25 @@
           </ul>
         </nav>
       </div>
+      <div class="yourCart">
+        <button type="button" class="btn btn-primary">
+          <img src="/images/cart-check.svg" alt="" /> Your Cart
+        </button>
+      </div>
     </header>
     <!--FirstSection-->
-    <section>
+    <section class="firstSectinContainer">
       <!--Images Left Size-->
       <div class="firstSectionWrapper">
         <div class="backgroundImage">
           <figure>
             <img src="" alt="" />
           </figure>
-        </div>
-        <div class="smallImages">
-          <figure><img src="" alt="" /></figure>
-          <figure><img src="" alt="" /></figure>
-          <figure><img src="" alt="" /></figure>
+          <div class="smallImages">
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+          </div>
         </div>
       </div>
       <!--Images Left Size-->
@@ -44,98 +61,102 @@
       <div class="infoContent">
         <div class="productWrapper">
           <h1>Product Title</h1>
-          <i class="">5 Reviews</i>
+          <img src="/images/star-fill.svg" alt="" /> 5 Reviews
         </div>
-        <!--Price Section-->
-        <div class="priceTag">
-          <div class="priceTicket">
-            <h2>$ 1232</h2>
-          </div>
-          <div class="modelButton">
-            <label for="select-model">Select Model</label>
-            <select name="select-model" id="select-model">
-              <option value="model2">Model 1</option>
-              <option value="model3">Model 2</option>
-              <option value="model4">Model 3</option>
-            </select>
-          </div>
-          <div class="descriptionSection">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-              fugit placeat in non nesciunt! Blanditiis inventore nostrum
-              perspiciatis corporis veniam, modi fugiat, sequi cupiditate
-              exercitationem optio quo delectus dolor dignissimos?
-            </p>
-          </div>
-          <div class="buttonAddCart">
-            <button>Add To Cart</button>
-          </div>
+        <div class="priceSelectModel">
+          <h2>$ 1232</h2>
+          <select name="Select-Model" id="">
+            Select Model
+            <option value="">Select Model</option>
+            <option value="">Model 1</option>
+            <option value="">Model 2</option>
+          </select>
         </div>
-        <!--Price Section-->
-      </div>
-    </section>
-    <!--FirstSection-->
-    <!--Similiar Products Section-->
-    <section class="similiarWrapper">
-      <div class="productOne">
-        <div class="imageProduct">
-          <figure>
-            <img src="" alt="prodcutOne" />
-          </figure>
-        </div>
-        <div class="similiarProductDescription">
-          <h3>Product Name</h3>
-          <i class="">Stars Icons</i>
-          <p>R$ 300</p>
-        </div>
-      </div>
-      <div class="productTwo">
-        <div class="imageProduct">
-          <figure>
-            <img src="" alt="prodcutOne" />
-          </figure>
-        </div>
-        <div class="similiarProductDescription">
-          <h3>Product Name</h3>
-          <i class="">Stars Icons</i>
-          <p>R$ 300</p>
-        </div>
-      </div>
-      <div class="productThree">
-        <div class="imageProduct">
-          <figure>
-            <img src="" alt="prodcutOne" />
-          </figure>
-        </div>
-        <div class="similiarProductDescription">
-          <h3>Product Name</h3>
-          <i class="">Stars Icons</i>
-          <p>R$ 300</p>
-        </div>
-      </div>
-    </section>
-    <!--Similiar Products Section-->
-    <!--Reviews Section-->
-    <section class="reviewsSectionWrapper">
-      <div class="reviewsContent01">
-        <div class="personalInformation">
-          <a href=""><i>John Doe</i></a>
-          <h4>august 14, 2018</h4>
-          <i class="">stars</i>
-        </div>
-        <div class="commentArea">
+        <div class="text-content">
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus,
-            temporibus provident? Iste consectetur quibusdam nulla dolores neque
-            atque aspernatur velit ipsam libero sunt magni nesciunt ducimus,
-            officia consequatur! Vitae, magni.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
+            possimus minima natus porro repudiandae. Quia, nisi magnam.
+            Assumenda, necessitatibus, officiis rerum harum velit porro ipsa
+            quisquam ad quaerat vel sapiente.
+          </p>
+        </div>
+        <div class="cart-button">
+          <button type="Button">Add To Cart</button>
+        </div>
+      </div>
+    </section>
+    <!-- END Of FirstSection-->
+    <!--Similiar Products-->
+    <section class="similiarProductsContainer">
+      <h1>Simliar Products</h1>
+      <div class="cardWraper">
+        <div class="cardSimiliarProdutcsImg">
+          <img src="" alt="" />
+        </div>
+        <div class="textArea">
+          <h2>Product Name</h2>
+          <img src="/images/star-fill.svg" alt="" />
+          <img src="/images/star-fill.svg" alt="" />
+          <img src="/images/star-fill.svg" alt="" />
+          <img src="/images/star-fill.svg" alt="" />
+          <img src="/images/star-fill.svg" alt="" />
+          <p>R$ 400</p>
+        </div>
+        <div class="cardSimiliarProdutcsImg">
+          <img src="" alt="" />
+        </div>
+        <div class="textArea">
+          <h2>Product Name</h2>
+          <img src="/images/star-fill.svg" alt="" />
+          <img src="/images/star-fill.svg" alt="" />
+          <img src="/images/star-fill.svg" alt="" />
+          <img src="/images/star-fill.svg" alt="" />
+          <img src="/images/star-fill.svg" alt="" />
+          <p>R$ 400</p>
+        </div>
+        <div class="cardSimiliarProdutcsImg">
+          <img src="" alt="" />
+        </div>
+        <div class="textArea">
+          <h2>Product Name</h2>
+          <img src="/images/star-fill.svg" alt="" />
+          <img src="/images/star-fill.svg" alt="" />
+          <img src="/images/star-fill.svg" alt="" />
+          <img src="/images/star-fill.svg" alt="" />
+          <img src="/images/star-fill.svg" alt="" />
+          <p>R$ 400</p>
+        </div>
+      </div>
+    </section>
+    <!--Similiar Products-->
+    <!--Reviews-->
+    <section class="reviewsContainer">
+      <h1>Reviews</h1>
+      <div class="userContent">
+        <div class="userCard">
+          <img src="" alt="" />
+          <h1>Joe Dune</h1>
+          <img src="/images/star-fill.svg" alt="" />
+          <img src="/images/star-fill.svg" alt="" />
+          <img src="/images/star-fill.svg" alt="" />
+          <img src="/images/star-fill.svg" alt="" />
+          <img src="/images/star-fill.svg" alt="" />
+          <p>August 14, 2004</p>
+        </div>
+        <div class="userComment">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto
+            tempora sed cum minus architecto deleniti officia omnis eveniet
+            earum ex saepe facilis quod, sit facere corrupti ullam dolorum
+            pariatur excepturi! Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Iusto tempora sed cum minus architecto deleniti
+            officia omnis eveniet earum ex saepe facilis quod, sit facere
+            corrupti ullam dolorum pariatur excepturi!
           </p>
         </div>
       </div>
     </section>
-    <!--Reviews Section-->
-    <!--Footer-->
 
-    <!--Footer-->
+    <!--Reviews-->
   </body>
 </html>

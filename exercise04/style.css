@@ -2,3 +2,261 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  box-sizing: border-box;
+  --gray: hsl(240, 9%, 89%);
+  --black: hsl(240, 6, 13);
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  list-style-type: none;
+}
+
+/*HEADER */
+header {
+  width: 100%;
+  height: 85px;
+  background-color: rgb(235, 232, 232);
+}
+.headerTop {
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+}
+.navSection {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-right: 15rem;
+}
+
+.navSection nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navSection ul {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-top: -5px;
+}
+.navSection li {
+  padding: 20px;
+  text-decoration: none;
+}
+.navSection a {
+  font-size: 20px;
+  font-weight: 400;
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+}
+
+.yourCart {
+  position: relative;
+  float: right;
+  margin-right: 6rem;
+  margin-top: -4rem;
+}
+.yourCart button {
+  color: rgb(248, 248, 248);
+  font-weight: 600;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  width: 6rem;
+  background-color: rgb(50, 103, 184);
+}
+.yourCart img {
+  color: white;
+}
+/*HEADER */
+
+/*First Section */
+
+.firstSectinContainer {
+  width: 100%;
+  height: 60rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.firstSectionWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.backgroundImage {
+  background-color: rgb(186, 168, 202);
+  width: 100%;
+  height: 80%;
+  margin-left: 10px;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+.smallImages {
+  width: 95%;
+  height: 10rem;
+  margin-top: 90%;
+  margin-left: 15px;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.smallImages img {
+  background-color: rgb(137, 96, 175);
+  width: 30%;
+  height: 80%;
+}
+
+.infoContent {
+  background-color: white;
+  height: 80%;
+  width: 100%;
+  margin-right: 10px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+}
+.productWrapper {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 10rem;
+  margin-top: 0;
+}
+.priceSelectModel {
+  width: 100%;
+  height: 5rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: -2rem;
+}
+
+.priceSelectModel h2 {
+  margin-left: -18rem;
+}
+.priceSelectModel select {
+  margin-left: -30rem;
+}
+.text-content {
+  width: 100%;
+  height: 20rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-content p {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.cart-button {
+  width: 100%;
+  height: 5rem;
+}
+.cart-button button {
+  width: 10rem;
+  font-weight: 600;
+  background-color: rgb(50, 120, 182);
+  color: white;
+}
+
+.similiarProductsContainer {
+  width: 100%;
+  background-color: rgb(248, 248, 248);
+  height: 25rem;
+  text-align: center;
+}
+
+.cardSimiliarProdutcsImg img {
+  background-color: rgb(146, 70, 180);
+  width: 100%;
+  height: 100%;
+}
+
+.cardSimiliarProdutcsImg {
+  width: 15rem;
+  height: 15rem;
+}
+.cardWraper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3rem;
+  padding: 10px;
+}
+.textArea {
+  width: 15rem;
+}
+.textArea h2 {
+  font-size: 25px;
+  font-size: ;
+}
+
+.reviewsContainer {
+  width: 100%;
+  height: 18rem;
+  background-color: rgb(235, 232, 232);
+  text-align: left;
+}
+.reviewsContainer h1 {
+  font-weight: 600;
+  margin-left: 5rem;
+}
+
+.userContent {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.userCard {
+  width: 40%;
+  height: 100%;
+}
+.userCard h1 {
+  margin-top: 6rem;
+  margin-left: 4rem;
+}
+.userCard img {
+  margin-left: 2rem;
+  padding: 1px;
+}
+.userCard p {
+  margin-top: 1rem;
+  margin-left: 5rem;
+  font-weight: 500;
+}
+.userComment {
+  width: 60%;
+  height: 100%;
+}
+.userComment p {
+  font-size: 23px;
+  letter-spacing: 2px;
+  margin-top: 5rem;
+}
